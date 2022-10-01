@@ -45,8 +45,8 @@ body{
     flex-direction: row-reverse;
     align-content: stretch;
     justify-content: flex-start;
-    align-items: stretch;
-    font-size: 100px;
+    align-items: center;
+    font-size: 60px;
     border-radius: 15px;
 }
 

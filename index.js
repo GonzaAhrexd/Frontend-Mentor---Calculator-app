@@ -1,5 +1,5 @@
 let operation = ""
-const cuadro = document.getElementById('screen')
+const cuadro = document.getElementById('ope')
 const key = document.querySelectorAll("#num")
 let opInt = []
 const eq = document.getElementById('equal')
@@ -27,7 +27,6 @@ function rst(){
 }
 
 function dlt(){
-    
     let operation2 = operation.slice(0,-1)
     operation  =  operation2
     operation2 = ""

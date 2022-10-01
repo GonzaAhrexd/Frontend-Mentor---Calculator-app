@@ -7,3 +7,113 @@ body{
     background-color: hsl(222, 26%, 31%);
     font-family: 'League Spartan', sans-serif;
 }
+
+.Calco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Calc{
+
+    height: 720px;
+    width: 580px;
+    margin-top: 50px;
+
+}
+
+.selector{
+    display: flex;
+    margin-top: 40px;
+    color: white;
+}
+
+.title{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.theme{
+    margin-left: 370px;
+}
+
+.operation{
+      background-color: hsl(224, 36%, 15%);
+    height: 115px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-size: 100px;
+    border-radius: 15px;
+}
+
+.keys{
+    background-color: hsl(223, 31%, 20%);
+    height: 500px;
+    margin-top: 35px;
+    border-radius: 15px;
+}
+
+.pad{
+
+    height: 470px;
+    margin: 30px;
+}
+.numbers{
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin-left: 26px;
+    margin-top: 30px;
+    background-color: hsl(30, 25%, 89%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0 4px 0px 0px hsl(28, 16%, 65%);
+}
+
+.del{
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin-left: 26px;
+    margin-top: 30px;
+    background-color: hsl(225, 21%, 49%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 0px 0px hsl(224, 28%, 35%);
+}
+
+
+.reset{
+    width: 230px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin-left: 26px;
+    margin-top: 30px;
+    background-color: hsl(225, 21%, 49%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 0px 0px hsl(224, 28%, 35%);
+}
+.equal{
+    width: 230px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin-left: 26px;
+    margin-top: 30px;
+    background-color: hsl(6, 63%, 50%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 0px 0px hsl(6, 70%, 34%);
+}

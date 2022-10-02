@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
-.attribution { font-size: 0.6875rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
 
-body{
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
     background-color: hsl(222, 26%, 31%);
     font-family: 'League Spartan', sans-serif;
 }
 
-.Calco{
+.Calco {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.Calc{
+
+.Calc {
 
     height: 45rem;
     width: 36.25rem;
@@ -21,17 +28,17 @@ body{
 
 }
 
-.selector{
+.selector {
     display: flex;
     color: white;
 }
 
-.title{
+.title {
     font-size: 1.875rem;
     margin-left: 0.625rem;
 }
 
-.theme{
+.theme {
     margin-left: 23.125rem;
     display: flex;
     flex-direction: row;
@@ -40,8 +47,8 @@ body{
     font-size: 12px;
 }
 
-.operation{
-      background-color: hsl(224, 36%, 15%);
+.operation {
+    background-color: hsl(224, 36%, 15%);
     height: 7.1875rem;
     border-radius: 0.3125rem;
     color: white;
@@ -55,20 +62,20 @@ body{
     margin-top: 1.5625rem;
 }
 
-.keys{
+.keys {
     background-color: hsl(223, 31%, 20%);
     height: 31.25rem;
     margin-top: 2.1875rem;
     border-radius: 0.9375rem;
-
 }
 
-.pad{
+.pad {
 
     height: 29.375rem;
     margin: 1.875rem;
 }
-.numbers{
+
+.numbers {
     width: 6.25rem;
     height: 3.75rem;
     border-radius: 0.625rem;
@@ -83,11 +90,11 @@ body{
     cursor: pointer;
 }
 
-.numbers:hover{
+.numbers:hover {
     background-color: hsl(0, 0%, 100%);
 }
 
-.del{
+.del {
     width: 6.25rem;
     height: 3.75rem;
     border-radius: 0.625rem;
@@ -101,11 +108,13 @@ body{
     box-shadow: 0 0.25rem 0rem 0rem hsl(224, 28%, 35%);
     cursor: pointer;
 }
-.del:hover,.reset:hover{
+
+.del:hover,
+.reset:hover {
     background-color: #a2b3e1;
 }
 
-.reset{
+.reset {
     width: 14.375rem;
     height: 3.75rem;
     border-radius: 0.625rem;
@@ -119,7 +128,8 @@ body{
     box-shadow: 0 0.25rem 0rem 0rem hsl(224, 28%, 35%);
     cursor: pointer;
 }
-.equal{
+
+.equal {
     width: 14.375rem;
     height: 3.75rem;
     border-radius: 0.625rem;
@@ -134,21 +144,21 @@ body{
     cursor: pointer;
 }
 
-.equal:hover{
+.equal:hover {
     background-color: #f96c5b;
 }
 
-#ope{
+#ope {
     margin-right: 1.875rem;
 }
 
-.choose-theme{
-    -webkit-appearance: none; /* Override default look */
+.choose-theme {
+    -webkit-appearance: none;
     appearance: none;
     width: 3.75rem;
     height: 1.25rem;
     margin-left: 2.1875rem;
-    background: hsl(223, 31%, 20%); /* Grey background */
+    background: hsl(223, 31%, 20%);
     border-radius: 0.625rem;
 }
 
@@ -156,20 +166,30 @@ body{
     height: 0.9375rem;
     width: 0.9375rem;
     border-radius: 0.625rem;
-    background: hsl(6, 63%, 50%);
+    background: hsl(6, 100%, 51%);
     cursor: pointer;
     -webkit-appearance: none;
     margin: 0.125rem;
-  }
+}
 
-.thnumb{
+.choose-theme::-webkit-slider-thumb:hover {
+    height: 0.9375rem;
+    width: 0.9375rem;
+    border-radius: 0.625rem;
+    background: #f96c5b;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin: 0.125rem;
+}
+
+.thnumb {
     display: flex;
     flex-direction: row;
     color: white;
     justify-content: flex-end;
 }
 
-.sep{
+.sep {
     margin-right: 1.125rem;
     font-size: 0.75rem;
 }

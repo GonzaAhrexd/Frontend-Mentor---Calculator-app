@@ -1,4 +1,6 @@
+//String operation
 let operation = ""
+//DOM
 const cuadro = document.getElementById('ope')
 const key = document.querySelectorAll("#num")
 const eq = document.getElementById('equal')
@@ -8,38 +10,38 @@ const fonts = [document.getElementById('selector'), document.getElementById('thn
 const bgpad = [document.getElementById('keys'), document.getElementById('chooseTheme')]
 const bgscrn = document.getElementById('screen')
 const deres = [document.getElementById('del'), document.getElementById('reset')]
-
+//Events
 reset.addEventListener('click', rst)
 eq.addEventListener('click', equal)
 del.addEventListener('click', dlt)
+//Numbers and operations keys
 key.forEach(keys => {
     keys.addEventListener('click', addN)
-
-
     function addN() {
         operation = operation + keys.textContent
         cuadro.innerHTML = operation
     }
-
 })
+//Equal key
 function equal() {
-    
-    cuadro.innerHTML = (eval(operation.replace('x','*')))
+    cuadro.innerHTML = (eval(operation.replace('x', '*')))
 }
+//Reset key
 function rst() {
     operation = ''
     cuadro.innerHTML = operation
 }
-
+//Delete key
 function dlt() {
     let operation2 = operation.slice(0, -1)
     operation = operation2
     operation2 = ""
     cuadro.innerHTML = operation
 }
-
+//Change Theme
 let range = document.getElementById('chooseTheme')
 function change() {
+    //Theme 1
     if (range.value == 0) {
         //Background
         document.body.style.backgroundColor = "hsl(222, 26%, 31%)";
@@ -87,8 +89,9 @@ function change() {
                 this.style.backgroundColor = "hsl(225, 21%, 49%)";
             }
         })
-    }
 
+    }
+    //Theme 2
     if (range.value == 1) {
         //Background
         document.body.style.backgroundColor = "hsl(0, 0%, 90%)";
@@ -138,7 +141,11 @@ function change() {
                 this.style.backgroundColor = "hsl(185, 42%, 37%)";
             }
         })
+        let style = document.querySelector('[data="test"]');
+        console.log(style)
+        style.innerHTML = ".choose-theme::-webkit-slider-thumb { background: hsl(152, 100%, 51%); }";
     }
+    //Theme 3
     if (range.value == 2) {
         //Background
         document.body.style.backgroundColor = "hsl(268, 75%, 9%)";
@@ -175,7 +182,6 @@ function change() {
             keys.onmouseleave = function () {
                 this.style.backgroundColor = "hsl(268, 47%, 21%)";
             }
-
         })
         //Delete and Reset
         deres.forEach((a, index) => {

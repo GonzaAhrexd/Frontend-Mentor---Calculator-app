@@ -17,17 +17,17 @@
 <body>
   <section class="Calco">
     <main class="Calc">
-      <div class="thnumb"> 
+      <div class="thnumb" id="thnumb"> 
         <div class="sep"> 1 </div> <div class="sep"> 2 </div> <div class="sep">  3</div> 
       </div>
-      <div class="selector">
+      <div class="selector" id="selector">
        
         <div class="title">
           calc
         </div>
         <div class="theme">
           THEME
-          <input class="choose-theme" id="chooseTheme" type="range"  min="0" max="2">
+          <input class="choose-theme" id="chooseTheme" type="range"  min="0" max="2" value="0" oninput="change()">
         </div>
       </div>
 
@@ -36,7 +36,7 @@
       </div>
 
       
-      <div class="keys">
+      <div class="keys" id="keys">
         <div class="pad">
         <div>
           <button class="numbers" id="num">7</button>

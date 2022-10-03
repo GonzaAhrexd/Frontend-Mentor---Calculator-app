@@ -10,6 +10,7 @@ const fonts = [document.getElementById('selector'), document.getElementById('thn
 const bgpad = [document.getElementById('keys'), document.getElementById('chooseTheme')]
 const bgscrn = document.getElementById('screen')
 const deres = [document.getElementById('del'), document.getElementById('reset')]
+const at = document.getElementById('attribution')
 //Events
 reset.addEventListener('click', rst)
 eq.addEventListener('click', equal)
@@ -89,7 +90,7 @@ function change() {
                 this.style.backgroundColor = "hsl(225, 21%, 49%)";
             }
         })
-
+        at.style.color = 'white'
     }
     //Theme 2
     if (range.value == 1) {
@@ -97,6 +98,7 @@ function change() {
         document.body.style.backgroundColor = "hsl(0, 0%, 90%)";
         //Screen
         bgscrn.style.backgroundColor = 'hsl(0, 0%, 93%)'
+    
         //Equal
         eq.style.backgroundColor = 'hsl(25, 98%, 40%)'
         eq.style.color = 'white'
@@ -141,9 +143,8 @@ function change() {
                 this.style.backgroundColor = "hsl(185, 42%, 37%)";
             }
         })
-        let style = document.querySelector('[data="test"]');
-        console.log(style)
-        style.innerHTML = ".choose-theme::-webkit-slider-thumb { background: hsl(152, 100%, 51%); }";
+  
+        at.style.color = 'black'
     }
     //Theme 3
     if (range.value == 2) {
@@ -196,6 +197,7 @@ function change() {
             }
 
         })
+        at.style.color = 'white'
     }
 }
 

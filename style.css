@@ -3,10 +3,13 @@
 .attribution {
     font-size: 0.6875rem;
     text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(28, 91%, 45%);
 }
 
 body {

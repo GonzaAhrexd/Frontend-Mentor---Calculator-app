@@ -63,7 +63,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://gonzaahrexd.github.io/Frontend-Mentor---Calculator-app/)
+- Live Site URL: (https://gonzaahrexd.github.io/Frontend-Mentor---Calculator-app/)
 
 ## My process
 

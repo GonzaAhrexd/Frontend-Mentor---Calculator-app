@@ -60,7 +60,6 @@ Users should be able to:
 </div>
 </div>
 
-https://www.youtube.com/watch?v=fRA0uReb72M
 
 ### Links
 
